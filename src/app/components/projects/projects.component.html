@@ -1,0 +1,18 @@
+<h1>Projects</h1>
+<button (click)="createNew()">CREATE NEW PROJECT</button>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Client</th>
+        <th>Template</th>
+        <th></th>
+    </tr>
+    <tr *ngIf="project">
+        <td>{{project.projectName}}</td>
+        <td>{{project.client}}</td>
+        <td>{{project.template}}</td>
+        <td>
+            <button (click)="deleteProject()">Delete</button>
+        </td>
+    </tr>
+</table>

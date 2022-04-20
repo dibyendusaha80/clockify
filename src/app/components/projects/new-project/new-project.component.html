@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>
+    Create New Project
+</h1>
+<div mat-dialog-content>
+    <form>
+        <input type="text" [(ngModel)]="projectName" placeholder="enter project name" name="name" required>
+        <select [(ngModel)]="client" name="client">
+            <option value="">Select client</option>
+        </select>
+        <select [(ngModel)]="template" name="template">
+            <option value="">Select template</option>
+        </select>
+        <!-- <checkbox [(ngModel)]="isPublic">Public</checkbox> -->
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button (click)="cancel()">Cancel</button>
+    <button (click)="saveProject()">CREATE</button>
+</div>
